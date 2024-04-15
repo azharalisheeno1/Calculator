@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff6525;
+    background-color: #ecf0f3;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgba(0, 0, 0, 0.14);
+    display: grid;
+    /* Grid templete-Coloums 4 colums thahindo ain 70px width jo thahindo */
+    grid-template-columns: repeat(4, 70px);
+}
+
+input {
+    grid-column: span 4;
+    width: 260px;
+    height: 60px;
+    background-color: #ecf0f3;
+    border: none;
+    box-shadow: inset -5px -5px 12px #fff, inset 5px 5px 12px rgba(0, 0, 0, 0.14);
+    outline: none;
+    border-radius: 30px;
+    font-size: 40px;
+    text-align: end;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: #ff6525;
+}
+
+button {
+    background-color: #ecf0f3;
+    width: 48px;
+    height: 48px;
+    box-shadow: -5px -5px 12px #fff, 5px 5px 12px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    border: none;
+    margin: 10px auto;
+}
+
+.equal {
+    margin: 10px 14px;
+    border-radius: 30px;
+    width: 120px;
+}
